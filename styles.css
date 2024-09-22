@@ -1,149 +1,157 @@
-body {
-    background-color: #080528;
-    font-family: sans-serif;
-    font-size: 16px;
+* {
     margin: 0;
     padding: 0;
-    padding-top: 50px;
-}
-
-.background {
-    display: flex;
-}
-
-* {
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Navbar */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+body {
+    background-color: #1e1e57;
+    color: #fff;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
-    background-color: #230743;
-    color: white;
+    padding: 20px;
 }
 
-.navbar p {
-    color: white;
-    font-size: large;
-    font-style: initial;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.navbar .links a {
-    padding: 5px;
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: rgb(255, 255, 255);
 }
 
-/* About section */
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 17px;
-    flex-direction: column;
-    text-align: center;
-    background-image: url('images/blackhole.png');
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+.social-icons a {
+    color: #fff;
+    margin-left: 10px;
 }
 
-.about p {
-    flex-direction: column;
-    font-size: large;
-    color: #ffffff;
-}
-
-.about p1 {
-    color: white;
-    font-size: larger;
-    flex-direction: column;
-}
-/*name, job and picture*/
-.about .name-and-picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.hero {
+    background-color: #3b3b6d;
+    padding: 50px;
     text-align: center;
 }
 
-.about img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.hero img {
 
+    width: 10%;
 }
 
-.about h1 {
-    margin: 10px 0;
-    font-size: 30px;
-    color: #ffffff;
+.hero h1 {
+    font-size: 36px;
 }
 
-.about h2 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #ffffff;
-    font-style: italic;
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
 }
 
-/* Skills section */
-.skills {
-    color: white;
+.btn {
+    background-color: #00d4ff;
+    padding: 10px 20px;
+    color: #1e1e57;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 50px;
+    text-align: center;
+}
+
+.feature-cards {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: flex;
-    background-image: url('images/hardware.png');
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
-/* Contact section */
+.card {
+    background-color: #2e2e66;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 15px; /* Adds some spacing between cards */
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto; /* Ensures the image's aspect ratio is maintained */
+    border-radius: 5px;
+}
+
+.data-visualization {
+    padding: 50px;
+    text-align: center;
+}
+
+.visualization-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.high-availability {
+    background-color: #28284e;
+    padding: 50px;
+    text-align: center;
+}
+
 .contact {
-    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: flex;
-    background-image: url('images/ai.png');
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.contact .contact-items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.contact input,
+.contact textarea {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
 }
 
-.contact .contact-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+.contact button {
+    background-color: #00d4ff;
+    padding: 10px 20px;
+    color: #1e1e57;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.contact .contact-item img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-.contact .contact-item p {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+footer {
+    background-color: #151533;
+    text-align: center;
+    padding: 20px;
 }
