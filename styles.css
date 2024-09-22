@@ -1,0 +1,149 @@
+body {
+    background-color: #080528;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+}
+
+.background {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #230743;
+    color: white;
+}
+
+.navbar p {
+    color: white;
+    font-size: large;
+    font-style: initial;
+}
+
+.navbar .links a {
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* About section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('images/blackhole.png');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.about p {
+    flex-direction: column;
+    font-size: large;
+    color: #ffffff;
+}
+
+.about p1 {
+    color: white;
+    font-size: larger;
+    flex-direction: column;
+}
+/*name, job and picture*/
+.about .name-and-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.about h1 {
+    margin: 10px 0;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.about h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+/* Skills section */
+.skills {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: flex;
+    background-image: url('images/hardware.png');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contact section */
+.contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: flex;
+    background-image: url('images/ai.png');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact .contact-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.contact .contact-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contact .contact-item p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
