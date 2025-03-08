@@ -172,7 +172,7 @@ p, ul {
 .experience-card-content h3 {
     @apply text-xl font-semibold text-gray-800 dark:text-gray-200;
 }
-
+ 
 .experience-card-content p {
     @apply text-gray-600 dark:text-gray-400;
 }
