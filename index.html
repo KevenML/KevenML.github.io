@@ -1,664 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+
+
+
+
+
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="webthemez">
-    <title>Aroma-Beauty-and-Spa-Responsive-Bootstrap-Template</title>
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> 
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
-</head> 
+    <title>Keven G.</title>
 
-<body id="home">
-    <header id="header">
-        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="#home">Home</a></li>  
-                        <li class="scroll"><a href="#services">Services</a></li>
-                        <li class="scroll"><a href="#about">About</a></li> 
-                        <li class="scroll"><a href="#our-team">Team</a></li>
-						<li class="scroll"><a href="#portfolio">Gallery</a></li>
-                        <li class="scroll"><a href="#pricing">Pricing</a></li>
-                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <section id="hero-banner">
-             <div class="banner-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12"> 
-                                    <h2>More Beautiful than <b>EVER</b></h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisici <br/> Praesent eget risus.</p>
-                                    <a class="btn btn-primary btn-lg" href="#">Packages</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section><!--/#main-slider-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            }
+        }
+    </script>
 
- <section id="services" >
-        <div class="container">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
 
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Whats Best For You</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-futbol-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Aroma Therapy</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+    <script>
+        AOS.init();
+    </script>
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-compass"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Face Massage</h4>
-                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-database"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Manicure</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bar-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Body Spa</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-paper-plane-o"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Head Massage</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
+</head>
 
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-bullseye"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Hair Spa</h4>
-                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div>
-            </div><!--/.row-->    
-        </div><!--/.container-->
-    </section><!--/#services-->
 
-  
- <section id="about">
-        <div class="container">
 
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Who we are</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
 
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeft">
-                  <img class="img-responsive" src="images/about.png" alt="">
-                </div>
 
-                <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Our Beauty Studio</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
-<ul class="listarrow">
-<li><i class="fa fa-angle-double-right"></i>Aroma Therapy</li>
-<li><i class="fa fa-angle-double-right"></i>Manicure</li>
-<li><i class="fa fa-angle-double-right"></i>Massage</li>
-<li><i class="fa fa-angle-double-right"></i>Body Spa</li> 
-<li><i class="fa fa-angle-double-right"></i>Hair Spa</li>
-</ul>
- 
 
-                </div>
+
+
+
+
+<body class="bg-black text-white">
+
+    <nav class="bg-gray-900 shadow-md py-4 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a class="text-2xl font-bold text-blue-400 flex items-center space-x-3" href="#">
+                <img id="myImage" src="images/keven.jpeg" alt="Profile Image" class="w-10 h-10 rounded-full">
+                <span>Mr. Gonzalez</span>
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button class="block md:hidden text-gray-300 focus:outline-none" id="menu-button" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation Buttons -->
+            <div class="flex flex-col md:flex-row absolute md:static right-0 top-full bg-gray-900 w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0 shadow-md md:shadow-none"
+                id="menu">
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Contact
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    About
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Experience
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Skills
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Projects
+                </button>
             </div>
         </div>
-    </section><!--/#about-->
+    </nav>
 
-     <section id="our-team">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">
-OUR TEAM
-</h2>
-<p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p> 
+
+
+    <!-- Software Engineering Title Section -->
+    <div class="section text-center">
+        <h1
+            class="text-7xl bg-gray-900 font-bold text-blue-400 mb-4 px-6 py-6 rounded-lg shadow-lg tracking-wide text-center">
+            Software Engineering
+        </h1>
+
+    </div>
+
+
+    <!-- Experience Section -->
+    <div class="section py-12">
+
+        <h2
+            class="text-5xl md:text-6xl font-extrabold text-blue-400 bg-gray-900 px-6 py-3 rounded-lg shadow-lg tracking-wide text-center">
+            Experience
+        </h2>
+
+        <div class="flex flex-col items-center gap-8 mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-4">
+
+                <!-- Trusten Robotics -->
+                <a href="trustenMain.html">
+                    <div
+                        class="experience-img bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-full max-w-sm mx-auto">
+                        <div class="flex justify-center">
+                            <img src="images/trusten-robotics-logo.png" alt="Trusten Robotics Logo"
+                                class="w-48 h-32 object-cover rounded-xl shadow-lg border-2 border-gray-300 dark:border-gray-600">
+                        </div>
+                        <div class="experience-content text-center">
+                            <h3 class="text-xl font-semibold mt-4">Trusten Robotics</h3>
+                            <p class="text-gray-700 dark:text-gray-300">Robotics assembler focusing on hardware-software
+                                integration.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- DPC Computer -->
+                <div
+                    class="experience-img bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-full max-w-sm mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/computer-repair-equipment.png" alt="DPC Computer Logo"
+                            class="w-48 h-32 object-cover rounded-xl shadow-lg border-2 border-gray-300 dark:border-gray-600">
+                    </div>
+                    <div class="experience-content text-center">
+                        <h3 class="text-xl font-semibold mt-4">DPC Computer</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Computer technician handling system repairs and
+                            troubleshooting.</p>
+                    </div>
+                </div>
+
+                <!-- USMC -->
+                <div
+                    class="experience-img bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-full max-w-sm mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/usmc-logo.png" alt="USMC Logo"
+                            class="w-48 h-32 object-cover rounded-xl shadow-lg border-2 border-gray-300 dark:border-gray-600">
+                    </div>
+                    <div class="experience-content text-center">
+                        <h3 class="text-xl font-semibold mt-4">United States Marine Corps (USMC)</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Gained discipline, leadership, and technical
+                            experience.</p>
+                    </div>
+                </div>
+
             </div>
-			
-			 	
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/01.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Micky Deo</h3>
-                            <span>Founder</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/02.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Mike Timobbs</h3>
-                            <span>Sr. Dresser</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/03.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Remo Silvaus</h3>
-                            <span>Sr. Therapist</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="team-img">
-                            <img class="img-responsive" src="images/team/04.jpg" alt="">
-                        </div>
-                        <div class="team-info">
-                            <h3>Niscal Deon</h3>
-                            <span>Massager</span> 
-                        </div> 
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Modernized Skills Section -->
+    <div class="section py-12 ">
+
+        <h2
+            class="text-5xl md:text-6xl text-blue-400 max-w-2xl font-extrabold bg-gray-900 px-6 py-3 rounded-lg shadow-lg tracking-wide text-center transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-xl mb-6">
+            Skills
+        </h2>
+
+        <div
+            class="grid bg-gray-900 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 min-h-[300px] p-5 rounded-2xl shadow-md">
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/python.svg" alt="Python" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Python</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/cpp.svg" alt="C++" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">C++</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/javascript.svg" alt="JavaScript" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">JavaScript</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/tensorflow.svg" alt="TensorFlow" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">TensorFlow</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/pytorch.svg" alt="PyTorch" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">PyTorch</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/opencv.svg" alt="OpenCV" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">OpenCV</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/html.svg" alt="HTML" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">HTML</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/css.svg" alt="CSS" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">CSS</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/react.svg" alt="React" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">React</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/ros.svg" alt="ROS" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">ROS</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/pandas.svg" alt="Pandas" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Pandas</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/aerospace.svg" alt="Aerospace" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Aerospace</span>
             </div>
 
         </div>
-    </section><!--/#our-team-->
 
-  <section id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Gallery</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
 
-            <div class="text-center">
-                <ul class="portfolio-filter" style="display:none">
-                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
-                    <li><a href="#" data-filter=".designing">Aroma</a></li>
-                    <li><a href="#" data-filter=".mobile">Manicure</a></li>
-                    <li><a href="#" data-filter=".development">Body Spa</a></li>
-                </ul><!--/#portfolio-filter-->
-            </div>
+    </div>
 
-            <div class="portfolio-items">
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item mobile development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
+    <!-- Projects Section -->
+    <div class="section py-12 ">
+        <div class="container mx-auto px-6">
 
-                <div class="portfolio-item designing">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
+            <h2
+                class="text-5xl md:text-6xl text-blue-400 max-w-2xl font-extrabold bg-gray-900 px-6 py-3 rounded-lg shadow-lg tracking-wide text-center mx-auto transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-xl mb-6">
+                Projects
+            </h2>
 
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
 
-                <div class="portfolio-item designing development">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-
-                <div class="portfolio-item mobile">
-                    <div class="portfolio-item-inner">
-                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
-                        <div class="portfolio-info"> 
-                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </div><!--/.portfolio-item-->
-            </div>
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
-
-    <section id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Pricing</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $45
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
-
-                                <div class="plan-name">
-                                    Basic
-                                </div>
-                            </li>
-                            <li><strong>1</strong> DOMAIN</li>
-                            <li><strong>100GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>10</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/autonomous-navigation.jpg" alt="Autonomous Navigation"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Autonomous Navigation in a Maze</h3>
+                        <p class="text-gray-700 mt-2">AI-based robotic path planning for navigating mazes
+                            efficiently.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <ul class="pricing featured">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $85
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
 
-                                <div class="plan-name">
-                                    Bronze
-                                </div>
-                            </li>
-                            <li><strong>5</strong> DOMAIN</li>
-                            <li><strong>500GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>30</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/medical-analysis.jpg" alt="Medical Image Analysis"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Medical Image Analysis</h3>
+                        <p class="text-gray-700 mt-2">Deep learning model for detecting medical anomalies in
+                            images.
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $125
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
 
-                                <div class="plan-name">
-                                    Silver
-                                </div>
-                            </li>
-                            <li><strong>10</strong> DOMAIN</li>
-                            <li><strong>2GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>50</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/3d-reconstruction.jpg" alt="AI-Driven 3D Reconstruction"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">AI-Driven 3D Reconstruction</h3>
+                        <p class="text-gray-700 mt-2">ML-based 3D model generation for simulations and
+                            visualization.</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                        <ul class="pricing">
-                            <li class="plan-header">
-                                <div class="price-duration">
-                                    <span class="price">
-                                        $185
-                                    </span>
-                                    <span class="duration">
-                                        per month
-                                    </span>
-                                </div>
 
-                                <div class="plan-name">
-                                    Gold
-                                </div>
-                            </li>
-                            <li><strong>15</strong> DOMAIN</li>
-                            <li><strong>10GB</strong> DISK SPACE</li>
-                            <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                            <li>SHARED SSL CERTIFICATE</li>
-                            <li><strong>100</strong> EMAIL ADDRESS</li>
-                            <li><strong>24/7</strong> SUPPORT</li>
-                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                        </ul>
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/smart-home.jpg" alt="Smart Home Automation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Smart Home Automation</h3>
+                        <p class="text-gray-700 mt-2">IoT-based home system for automation and energy
+                            efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/leetcode-solver.jpg" alt="LeetCode Problem Solver"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">LeetCode Problem Solver</h3>
+                        <p class="text-gray-700 mt-2">Web tool for tracking and improving algorithmic
+                            performance.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!--/#pricing-->
-   
-   
+    </div>
 
-    <section id="business-stats">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Healty Report</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
+    <!-- About Section -->
+    <div class="section text-center">
+        <section
+            class="relative bg-gradient-to-b from-gray-900 to-white min-h-screen w-full flex items-center justify-center">
+            <div class="w-full max-w-7xl mx-auto flex flex-col items-center gap-12 relative px-6">
 
-            <div class="row text-center">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="business-stats" data-digit="6850" data-duration="1000"></div>
-                        <strong>Clients</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="business-stats" data-digit="1465" data-duration="1000"></div>
-                        <strong>Trainer</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="business-stats" data-digit="4325" data-duration="1000"></div>
-                        <strong>Programs</strong>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="business-stats" data-digit="2568" data-duration="1000"></div>
-                        <strong>Successes</strong>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#business-stats-->
+                <!-- Title Above Image -->
+                <h2 class="text-6xl md:text-8xl font-bold text-blue-400 text-center">
+                    About Me
+                </h2>
 
-  
-    <section class="testimonial-area" id="testimonial">
-			<div class="container">
-				<div class="section-header">
-                <h2 class="section-title wow fadeInDown">Testimonial</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-							<div class="row">
-								<div class="col-xs-12">
-									<blockquote>Sontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-3">
-									<img src="images/pic1.jpg" alt="client">
-								</div>
-								<div class="col-xs-9 half-gutter">
-									<h5>John Bond</h5>
-									<h6>Lorem Ipsuis simply</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-							<div class="row">
-								<div class="col-xs-12">
-									<blockquote>Tontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-3">
-									<img src="images/pic2.jpg" alt="client">
-								</div>
-								<div class="col-xs-9 half-gutter">
-									<h5>John Bond</h5>
-									<h6>Lorem Ipsuis simply</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
-							<div class="row">
-								<div class="col-xs-12">
-									<blockquote>Aontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-3">
-									<img src="images/pic1.jpg" alt="client">
-								</div>
-								<div class="col-xs-9 half-gutter">
-									<h5>John Bond</h5>
-									<h6>Lorem Ipsuis simply</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-    <section id="contact-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title wow fadeInDown">Contact Us</h2>
-                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
-            </div>
-        </div>
-    </section><!--/#contact-us-->
+                <!-- Image Container with Text Overlay -->
+                <div class="relative w-full max-w-3xl rounded-3xl overflow-hidden">
+                    <!-- Image with Gray Filter -->
+                    <img src="images/mex-american.jpg" alt="Mexican American"
+                        class="w-full h-auto object-cover rounded-3xl shadow-2xl filter grayscale hover:grayscale-0 transition duration-300">
 
-
-    <section id="contact">
-        
-        <div class="container">
-            <div class="container contact-info">
-                <div class="row">
-				  <div class="col-sm-4 col-md-4">
-                        <div class="contact-form">
-                            <h3>Contact Info</h3>
-
-                            <address>
-                              <strong>Aroma Spa, Inc.</strong><br>
-                              12345 NewYork, Street 125<br>
-                              United States 94107<br>
-                              <abbr title="Phone">P:</abbr> (123) 456-7890
-                            </address>
-					</div></div>
-                    <div class="col-sm-8 col-md-8">
-                        <div class="contact-form">
-                       
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
+                    <!-- Dark Overlay for Readability -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center p-6 rounded-3xl">
+                        <p
+                            class="text-white text-lg md:text-xl lg:text-2xl font-bold text-center leading-relaxed tracking-wide drop-shadow-md">
+                            "My parents tilled the earth with cracked hands, their dreams buried beneath endless rows of
+                            crops, hoping their sacrifice would bloom into something greater. The soil beneath my feet
+                            taught me resilience; the Corps forged it into steel. I traveled south, wore the uniform,
+                            and served my country with honor. When my duty was done, I turned to a new battlefield—code,
+                            circuits, intelligence itself. AI became my weapon, shaping robotics, medicine, aerospace,
+                            and finance. From fields to fire to the frontier of human thought, I built a path where none
+                            was laid before. A warrior, a creator—both, always. My story is written in sweat, in
+                            service, in code."
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>   
-   </section><!--/#bottom-->
+        </section>
+    </div>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2016 Company Name. Template by <a target="_blank" href="http://webthemez.com/" title="Free Bootstrap Themes and HTML Templates">WebThemez.com</a>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom-scripts.js"></script>
+
+
+    <footer class="bg-white shadow-md py-4 text-center mt-10">
+        <p class="text-gray-600">&copy; 2025 My Webpage. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
 </body>
+
 </html>
