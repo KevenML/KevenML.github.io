@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keven G.</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div id="particles-js"></div>
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body class="bg-black text-white">
+
+    <nav class="bg-gray-900 shadow-md py-4 fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <a class="text-2xl font-bold text-blue-400 flex items-center space-x-3" href="#">
+                <img id="myImage" src="images/keven.jpeg" alt="Profile Image" class="w-10 h-10 rounded-full">
+                <span>Mr. Gonzalez</span>
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button class="block md:hidden text-gray-300 focus:outline-none" id="menu-button" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigation Buttons -->
+            <div class="flex flex-col md:flex-row absolute md:static right-0 top-full bg-gray-900 w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0 shadow-md md:shadow-none"
+                id="menu">
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Contact
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    About
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Experience
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Skills
+                </button>
+                <button
+                    class="bg-gray-900 text-blue-400 hover:bg-blue-500 hover:text-white py-2 px-4 rounded-lg transition-all duration-300">
+                    Projects
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Software Engineering Title Section -->
+    <div class="section text-center">
+        <h1
+            class="text-7xl bg-gray-900 font-bold text-blue-400 mb-4 px-6 py-6 rounded-lg shadow-lg tracking-wide text-center">
+            Software Engineering
+        </h1>
+
+    </div>
+
+
+    <!-- Experience Section -->
+    <div class="section py-12">
+
+        <h2
+            class="text-5xl md:text-6xl font-extrabold text-blue-400 bg-gray-900 px-6 py-3 rounded-lg shadow-lg tracking-wide text-center">
+            Experience
+        </h2>
+
+        <div class="flex flex-col items-center gap-8 mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-4">
+
+                <!-- Trusten Robotics -->
+                <a href="trustenMain.html">
+                    <div
+                        class="experience-img bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-full max-w-sm mx-auto">
+                        <div class="flex justify-center">
+                            <img src="images/trusten-robotics-logo.png" alt="Trusten Robotics Logo"
+                                class="w-48 h-32 object-cover rounded-xl shadow-lg border-2 border-gray-300 dark:border-gray-600">
+                        </div>
+                        <div class="experience-content text-center">
+                            <h3 class="text-xl font-semibold mt-4">Trusten Robotics</h3>
+                            <p class="text-gray-700 dark:text-gray-300">Robotics assembler focusing on hardware-software
+                                integration.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- DPC Computer -->
+                <div
+                    class="experience-img bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-full max-w-sm mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/computer-repair-equipment.png" alt="DPC Computer Logo"
+                            class="w-48 h-32 object-cover rounded-xl shadow-lg border-2 border-gray-300 dark:border-gray-600">
+                    </div>
+                    <div class="experience-content text-center">
+                        <h3 class="text-xl font-semibold mt-4">DPC Computer</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Computer technician handling system repairs and
+                            troubleshooting.</p>
+                    </div>
+                </div>
+
+                <!-- USMC -->
+                <div
+                    class="experience-img bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-full max-w-sm mx-auto">
+                    <div class="flex justify-center">
+                        <img src="images/usmc-logo.png" alt="USMC Logo"
+                            class="w-48 h-32 object-cover rounded-xl shadow-lg border-2 border-gray-300 dark:border-gray-600">
+                    </div>
+                    <div class="experience-content text-center">
+                        <h3 class="text-xl font-semibold mt-4">United States Marine Corps (USMC)</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Gained discipline, leadership, and technical
+                            experience.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- Modernized Skills Section -->
+    <div class="section py-12 ">
+
+        <h2
+            class="text-5xl md:text-6xl text-blue-400 max-w-2xl font-extrabold bg-gray-900 px-6 py-3 rounded-lg shadow-lg tracking-wide text-center transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-xl mb-6">
+            Skills
+        </h2>
+
+        <div
+            class="grid bg-gray-900 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 min-h-[300px] p-5 rounded-2xl shadow-md">
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/python.svg" alt="Python" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Python</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/cpp.svg" alt="C++" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">C++</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/javascript.svg" alt="JavaScript" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">JavaScript</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/tensorflow.svg" alt="TensorFlow" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">TensorFlow</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/pytorch.svg" alt="PyTorch" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">PyTorch</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/opencv.svg" alt="OpenCV" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">OpenCV</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/html.svg" alt="HTML" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">HTML</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/css.svg" alt="CSS" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">CSS</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/react.svg" alt="React" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">React</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/ros.svg" alt="ROS" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">ROS</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/pandas.svg" alt="Pandas" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Pandas</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-2 rounded-lg bg-white dark:bg-gray-800 shadow">
+                <img src="images/aerospace.svg" alt="Aerospace" class="w-8 h-8 rounded-md">
+                <span class="text-lg font-medium text-gray-700 dark:text-gray-300">Aerospace</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Projects Section -->
+    <div class="section py-12 ">
+        <div class="container mx-auto px-6">
+
+            <h2
+                class="text-5xl md:text-6xl text-blue-400 max-w-2xl font-extrabold bg-gray-900 px-6 py-3 rounded-lg shadow-lg tracking-wide text-center mx-auto transition duration-300 ease-in-out transform hover:bg-gray-200 hover:scale-105 hover:shadow-xl mb-6">
+                Projects
+            </h2>
+
+
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card -->
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/autonomous-navigation.jpg" alt="Autonomous Navigation"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Autonomous Navigation in a Maze</h3>
+                        <p class="text-gray-700 mt-2">AI-based robotic path planning for navigating mazes
+                            efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/medical-analysis.jpg" alt="Medical Image Analysis"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Medical Image Analysis</h3>
+                        <p class="text-gray-700 mt-2">Deep learning model for detecting medical anomalies in
+                            images.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/3d-reconstruction.jpg" alt="AI-Driven 3D Reconstruction"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">AI-Driven 3D Reconstruction</h3>
+                        <p class="text-gray-700 mt-2">ML-based 3D model generation for simulations and
+                            visualization.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/smart-home.jpg" alt="Smart Home Automation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">Smart Home Automation</h3>
+                        <p class="text-gray-700 mt-2">IoT-based home system for automation and energy
+                            efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white bg-gray-100 shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/leetcode-solver.jpg" alt="LeetCode Problem Solver"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900">LeetCode Problem Solver</h3>
+                        <p class="text-gray-700 mt-2">Web tool for tracking and improving algorithmic
+                            performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section text-center">
+        <section
+            class="relative bg-gradient-to-b from-gray-900 to-white min-h-screen w-full flex items-center justify-center">
+            <div class="w-full max-w-7xl mx-auto flex flex-col items-center gap-12 relative px-6">
+
+                <!-- Title Above Image -->
+                <h2 class="text-6xl md:text-8xl font-bold text-blue-400 text-center">
+                    About Me
+                </h2>
+
+                <!-- Image Container with Text Overlay -->
+                <div class="relative w-full max-w-3xl rounded-3xl overflow-hidden">
+                    <!-- Image with Gray Filter -->
+                    <img src="images/mex-american.jpg" alt="Mexican American"
+                        class="w-full h-auto object-cover rounded-3xl shadow-2xl filter grayscale hover:grayscale-0 transition duration-300">
+
+                    <!-- Dark Overlay for Readability -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center p-6 rounded-3xl">
+                        <p
+                            class="text-white text-lg md:text-xl lg:text-2xl font-bold text-center leading-relaxed tracking-wide drop-shadow-md">
+                            "My parents tilled the earth with cracked hands, their dreams buried beneath endless rows of
+                            crops, hoping their sacrifice would bloom into something greater. The soil beneath my feet
+                            taught me resilience; the Corps forged it into steel. I traveled south, wore the uniform,
+                            and served my country with honor. When my duty was done, I turned to a new battlefield—code,
+                            circuits, intelligence itself. AI became my weapon, shaping robotics, medicine, aerospace,
+                            and finance. From fields to fire to the frontier of human thought, I built a path where none
+                            was laid before. A warrior, a creator—both, always. My story is written in sweat, in
+                            service, in code."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <h2>Contact Form</h2>
+    <form id="contact-form"
+        action="https://script.google.com/macros/s/AKfycbw8pgA22aKd4-1VyMa_2zr55yw0RL4LBBpRctPeb9ROGhJtskjypDqcr1sm0ZsC6Y9i/exec"
+        method="post">
+        <input type="text" name="First Name" placeholder="First Name" required>
+        <input type="text" name="Last Name" placeholder="Last Name" required>
+        <input type="text" name="Company" placeholder="Company" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+        <input type="text" name="Location" placeholder="Location (Optional)">
+        <textarea name="Message" placeholder="Your message (Optional)"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+    <footer class="bg-white shadow-md py-4 text-center mt-10">
+        <p class="text-gray-600">&copy; 2025 My Webpage. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
+
