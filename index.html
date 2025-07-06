@@ -2,121 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keven Gonzalez Resume</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #1e1e1e;
-            color: #f0f0f0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2em;
-            text-align: center;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-bottom: 1em;
-            border: 3px solid #4da6ff;
-        }
-
-        h1,
-        h2 {
-            color: #4da6ff;
-        }
-
-        h2 {
-            border-bottom: 1px solid #4da6ff;
-            padding-bottom: 0.3em;
-            margin-top: 1.5em;
-        }
-
-        .download-btn {
-            display: inline-block;
-            margin: 1em 0;
-            padding: 0.75em 1.5em;
-            background-color: #4da6ff;
-            color: #1e1e1e;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        ul {
-            list-style-type: square;
-            padding-left: 1.2em;
-            text-align: left;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 1em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outlined Website Layout</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
+
 <body>
-    <div class="container">
-        <img src="/images/kevpic.png" alt="Keven Gonzalez" class="profile-pic">
-        <h1>Keven Gonzalez</h1>
-        <p><strong>Electrical / Mechanical / Computer / Programming / Data / Management</strong></p>
-        <a href="Keven_Gonzalez_Resume.pdf" class="download-btn" download>Download PDF Resume</a>
+  <div class="container">
 
-        <h2>Experience</h2>
-        <p><strong>Trusten Robotics, Downers Grove, IL — Robotic Technician</strong><br>
-            <em>September 2023 - January 2025</em><br>
-            Transitioned from builder to technician. Handled training, testing, and repairs. Assisted R&D with data
-            management, mechanical/electrical/computer systems, networking, and manufacturing.
-        </p>
+    <div class="nav">Navigation</div>
 
-        <p><strong>DPC Computer, Naperville, IL — Intern</strong><br>
-            <em>Summer 2022</em><br>
-            Built/restored computers, installed OS, priced products. Restored 30+ desktops, 40+ laptops, and 5 high-end
-            gaming PCs, totaling over $32,000 in equipment.
-        </p>
+    <div class="header">Engineering Intelligent Systems “From City Blocks to Circuit Boards”</div>
 
-        <p><strong>US Marine Corps, MCAS Cherry Point, NC — Aviation Operations Specialist</strong><br>
-            <em>2017 - 2021</em><br>
-            Led junior Marines, maintained equipment and runways, managed hazardous materials and records. Oversaw
-            5,200+ arrivals, 7,280+ departures, and a team of 10-20.
-        </p>
+    <div class="sidebar">Side Bar</div>
 
-        <h2>Education</h2>
-        <p><strong>College of DuPage, Glen Ellyn, IL</strong><br>
-            <em>2022 - Present</em><br>
-            Completing sophomore year; planning to transfer to UIC for a PhD.
-        </p>
+    <div class="content">
 
-        <h2>Languages</h2>
-        <p>English and Spanish</p>
+      <div class="intro-text">
+        I'm an <a href="electrical-engineering.html">Electrical Engineer</a> specializing in
+        <a href="embedded-systems-engineering.html">Embedded Systems</a>,
+        with expertise in <strong>Robotics</strong>, <strong>Smart Infrastructure</strong>,
+        <strong>PCB Design</strong>, and <strong>Software Engineering</strong>.
+      </div>
 
-        <h2>Skills</h2>
-        <ul>
-            <li>Adobe Cloud Services</li>
-            <li>Algorithms, Analysis</li>
-            <li>CAD, Control Systems</li>
-            <li>C++, CSS, HTML, JavaScript, Python</li>
-            <li>Communication, Documentation</li>
-            <li>Electrical & Embedded Systems</li>
-            <li>Excel, Google Cloud, Microsoft Office</li>
-            <li>Gazebo, RViz, ROS2</li>
-            <li>Kinematics & Dynamics</li>
-            <li>Leadership, Project & Logistics Management</li>
-            <li>Machine Learning & AI</li>
-            <li>Prototyping, Troubleshooting</li>
-        </ul>
+      <div class="boxes">
+        <div class="box">
+          <a href="robotics-engineer.html">
+            <img src="robotics-image.jpeg" alt="Robotics" class="box-image">
+            <p class="box-title">Robotics</p>
+            <p class="box-desc">Autonomous systems, AI integration, sensor fusion</p>
+          </a>
+        </div>
+        <div class="box">
+          <a href="smart-infrastructure.html">
+            <img src="smart-infrastructure.jpg" alt="Smart Infrastructure" class="box-image">
+            <p class="box-title">Smart Infrastructure</p>
+            <p class="box-desc">IoT, grid design, building automation</p>
+          </a>
+        </div>
+        <div class="box">
+          <a href="pcb-designer.html">
+            <img src="pcb-design.jpg" alt="PCB Design" class="box-image">
+            <p class="box-title">PCB Design</p>
+            <p class="box-desc">Multilayer boards, embedded MCUs, signal routing</p>
+          </a>
+        </div>
+        <div class="box">
+          <a href="software-engineering.html">
+            <img src="software-engineering.jpg" alt="Software Engineering" class="box-image">
+            <p class="box-title">Software Engineering</p>
+            <p class="box-desc">Embedded C++, Python, control systems</p>
+          </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="card-section">
+        <div class="intro-text">Call-to-Action Buttons:</div>
+        <div class="boxes">
+          <div class="box">Explore My Work</div>
+          <div class="box">Industry Value</div>
+          <div class="box">Get In Touch</div>
+        </div>
+      </div>
+
+      <div class="card-section">
+        <div class="intro-text">Keven Gonzalez “Who is Keven?” An electrical engineer who designs systems that bridge
+          infrastructure, robotics, and innovation. His work spans smart buildings, autonomous drones, robotic surgical
+          tools, and even concert audio setups. Whether it's hardware or human experience, he focuses on connecting the
+          power.</div>
+        <div class="boxes">
+
+          <div class="box">PCB Design & Embedded Systems</div>
+          <div class="box">Robotics & Autonomous Platforms</div>
+          <div class="box">Smart Home & Infrastructure Wiring</div>
+          <div class="box">Missile & Aerospace Schematics</div>
+          <div class="box">Surgical Robotics Design</div>
+          <div class="box">Automotive Electrical & Control</div>
+          <div class="box">Live Audio Engineering (Concert Systems)</div>
+
+        </div>
+      </div>
+
+
+
+
+
     </div>
+
+    <div class="footer">Footer</div>
+
+  </div>
 </body>
 
 </html>
