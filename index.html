@@ -3,15 +3,14 @@
 <html lang="en">
 
 <head>
-    <!-- ================= METADATA ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website description">
+    <meta name="description" content="Responsive glass-style website template">
     <title>My Website</title>
 
-    <!-- ================= CSS STYLES ================= -->
     <style>
-        /* GLOBAL SETTINGS */
+        /* ===== GLOBAL SETTINGS ===== */
+
         *,
         *::before,
         *::after {
@@ -20,7 +19,7 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 80px;
+            scroll-padding-top: 90px;
         }
 
         body {
@@ -28,8 +27,14 @@
             min-width: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            color: #222;
-            background: #f4f4f4;
+            color: #ffffff;
+
+            /* Background behind transparent boxes */
+            background:
+                radial-gradient(ellipse at top left, #203b65, transparent 55%),
+                linear-gradient(135deg, #080d18, #172033 60%, #090d15);
+
+            background-attachment: fixed;
         }
 
         img {
@@ -39,83 +44,113 @@
         }
 
         a {
-            color: #155eef;
+            color: #a9d4ff;
+            text-decoration: none;
         }
 
-        /* HEADER */
+        a:hover {
+            color: #ffffff;
+        }
+
+        /* ===== TRANSPARENT BOX STYLE ===== */
+
+        .glass {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 16px;
+
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        /* ===== HEADER ===== */
+
         header {
             padding: clamp(2rem, 6vw, 5rem) 1rem;
+            margin: 1rem;
             text-align: center;
-            color: white;
-            background: #172554;
         }
 
         header h1 {
             margin: 0;
-            font-size: clamp(1.8rem, 5vw, 3rem);
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
             line-height: 1.2;
         }
 
-        /* NAVIGATION */
+        header p {
+            color: #c5d4e8;
+        }
+
+        /* ===== NAVIGATION ===== */
+
         nav {
             position: sticky;
             top: 0;
             z-index: 100;
+
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 0.5rem;
-            padding: 0.75rem 1rem;
-            background: white;
-            border-bottom: 1px solid #ddd;
+
+            padding: 0.75rem;
+            margin: 0 1rem 1rem;
+
+            background: rgba(12, 19, 33, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 14px;
+
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
 
         nav a {
-            padding: 0.5rem 0.75rem;
-            color: #222;
-            text-decoration: none;
-            border-radius: 6px;
+            padding: 0.6rem 0.9rem;
+            color: #ffffff;
+            border-radius: 8px;
         }
 
         nav a:hover,
         nav a:focus-visible {
-            background: #e5e7eb;
+            background: rgba(255, 255, 255, 0.14);
         }
 
-        /* PAGE LAYOUT */
+        /* ===== PAGE LAYOUT ===== */
+
         .page-layout {
             display: grid;
             grid-template-columns: 220px minmax(0, 1fr);
             gap: 1.5rem;
+
             width: 100%;
             max-width: 1440px;
             margin: 0 auto;
-            padding: clamp(1rem, 3vw, 2rem);
+            padding: 1rem;
             align-items: start;
         }
 
-        /* SIDEBAR */
+        /* ===== SIDEBAR ===== */
+
         aside {
-            min-width: 0;
-            padding: 1rem;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+            padding: 1.25rem;
         }
 
-        /* MAIN CONTENT */
+        /* ===== MAIN CONTENT ===== */
+
         main {
             min-width: 0;
         }
 
-        /* CONTENT SECTIONS */
+        /* ===== SECTIONS ===== */
+
         section {
-            min-width: 0;
-            margin-bottom: 2rem;
             padding: clamp(1rem, 3vw, 2rem);
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            min-width: 0;
         }
 
         section h2 {
@@ -123,7 +158,8 @@
             font-size: clamp(1.3rem, 2.5vw, 2rem);
         }
 
-        /* RESPONSIVE CARD GRID */
+        /* ===== RESPONSIVE CARD GRID ===== */
+
         .card-grid {
             display: grid;
             grid-template-columns:
@@ -131,52 +167,77 @@
             gap: 1rem;
         }
 
-        /* INDIVIDUAL CARDS */
+        /* ===== INDIVIDUAL CARDS ===== */
+
         .card {
             min-width: 0;
             padding: 1rem;
             overflow-wrap: anywhere;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 12px;
+
+            transition:
+                background 0.25s ease,
+                transform 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
 
         .card img {
             width: 100%;
             aspect-ratio: 16 / 9;
             object-fit: cover;
-            border-radius: 6px;
+            border-radius: 8px;
         }
 
         .card h3 {
             font-size: clamp(1.05rem, 2vw, 1.3rem);
         }
 
-        /* FOOTER */
-        footer {
-            padding: 1.5rem 1rem;
-            text-align: center;
-            color: white;
-            background: #172554;
-            overflow-wrap: anywhere;
+        .card p {
+            color: #cbd5e1;
         }
 
-        /* TABLETS AND NARROW WINDOWS */
+        /* ===== FOOTER ===== */
+
+        footer {
+            margin: 1rem;
+            padding: 1.5rem;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        /* ===== TABLET / NARROW WINDOWS ===== */
+
         @media (max-width: 850px) {
             .page-layout {
                 grid-template-columns: minmax(0, 1fr);
             }
         }
 
-        /* MOBILE PHONES */
+        /* ===== MOBILE ===== */
+
         @media (max-width: 600px) {
+            header {
+                margin: 0.5rem;
+                padding: 2rem 1rem;
+            }
+
             nav {
-                gap: 0.25rem;
-                padding: 0.5rem;
+                position: relative;
+                margin: 0 0.5rem 0.75rem;
+                gap: 0.2rem;
             }
 
             nav a {
-                padding: 0.5rem;
+                padding: 0.45rem 0.6rem;
                 font-size: 0.9rem;
             }
 
@@ -193,12 +254,24 @@
             .card-grid {
                 grid-template-columns: minmax(0, 1fr);
             }
+
+            .glass {
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+            }
         }
 
-        /* ACCESSIBILITY: REDUCED MOTION */
+        /* ===== ACCESSIBILITY ===== */
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
             }
         }
     </style>
@@ -206,13 +279,13 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header id="home">
+    <!-- HEADER -->
+    <header class="glass" id="home">
         <h1>My Website</h1>
-        <p>Website introduction or tagline</p>
+        <p>From City Blocks to Circuit Boards</p>
     </header>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- NAVIGATION -->
     <nav aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -221,26 +294,26 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- ================= PAGE LAYOUT ================= -->
+    <!-- PAGE LAYOUT -->
     <div class="page-layout">
 
         <!-- SIDEBAR -->
-        <aside>
+        <aside class="glass">
             <h2>Sidebar</h2>
-            <p>Additional information or links.</p>
+            <p>Additional links and information.</p>
         </aside>
 
         <!-- MAIN CONTENT -->
         <main>
 
-            <!-- SECTION 1 -->
-            <section id="about">
+            <!-- ABOUT -->
+            <section class="glass" id="about">
                 <h2>About</h2>
-                <p>Introduce yourself or your website here.</p>
+                <p>Introduce yourself or your organization.</p>
             </section>
 
-            <!-- SECTION 2 -->
-            <section id="services">
+            <!-- SERVICES -->
+            <section class="glass" id="services">
                 <h2>Services</h2>
 
                 <div class="card-grid">
@@ -266,25 +339,24 @@
                 </div>
             </section>
 
-            <!-- SECTION 3 -->
-            <section id="projects">
+            <!-- PROJECTS -->
+            <section class="glass" id="projects">
                 <h2>Projects</h2>
-                <p>Showcase your projects here.</p>
+                <p>Showcase your work here.</p>
             </section>
 
-            <!-- SECTION 4 -->
-            <section id="contact">
+            <!-- CONTACT -->
+            <section class="glass" id="contact">
                 <h2>Contact</h2>
                 <p>Contact information goes here.</p>
                 <a href="mailto:you@example.com">Email me</a>
             </section>
 
         </main>
-
     </div>
 
-    <!-- ================= FOOTER ================= -->
-    <footer>
+    <!-- FOOTER -->
+    <footer class="glass">
         <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>
 
