@@ -1,314 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Outlined Website Layout</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>My Website</title>
+  <meta name="description" content="Description of my website.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+  <!-- HEADER -->
+  <header class="site-header" id="home">
+    <h1>My Website</h1>
+    <p>A short description of my website.</p>
+  </header>
 
+  <!-- NAVIGATION -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- PAGE LAYOUT -->
+  <div class="page-layout">
 
-  <div class="container">
-    <div class="page">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>Additional links or information.</p>
+    </aside>
 
-      <div id="particles-js"></div>
-      <div class="header">Engineering Intelligent Systems “From City Blocks to Circuit Boards”</div>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
 
-    </div>
+      <!-- SECTION 1 -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>Introduce yourself or explain your website.</p>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="services" class="section">
+        <h2>Services</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <img src="images/image1.jpg" alt="Description of image one">
+            <h3>Service One</h3>
+            <p>Description of the first service.</p>
+            <a href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <img src="images/image2.jpg" alt="Description of image two">
+            <h3>Service Two</h3>
+            <p>Description of the second service.</p>
+            <a href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <img src="images/image3.jpg" alt="Description of image three">
+            <h3>Service Three</h3>
+            <p>Description of the third service.</p>
+            <a href="#contact">Learn more</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Showcase your work here.</p>
+      </section>
+
+      <!-- SECTION 4 -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Add your contact information or links.</p>
+        <a href="mailto:you@example.com">Email me</a>
+      </section>
+
+    </main>
   </div>
 
-  <div class="container">
-    <div class="nav">Navigation
-    </div>
-  </div>
-
-
-
-
-  <div class="container">
-    <div class="page">
-
-      <div class="sidebar">Side Bar</div>
-
-
-      <div class="container">
-
-        <div class="intro-text">Industries</div>
-        <div class="boxes">
-
-          <div class="box">
-            <a href="surgical-robotic.html">
-              <img src="surgical-robotic.jpg" alt="surgical robotic" class="box-image">
-              <p class="box-title">Medical</p>
-              <p class="box-desc">sugical robotic arm and imaging</p>
-            </a>
-          </div>
-
-          <div class="box">
-            <a href="Aerospace-engineer.html">
-              <img src="drone.jpg" alt="Robotics" class="box-image">
-              <p class="box-title">Aerospace</p>
-              <p class="box-desc">drones, vehicles, rocket </p>
-            </a>
-          </div>
-
-          <div class="box">
-            <a href="smart-infrastructure.html">
-              <img src="mep.jpg" alt="Smart Infrastructure" class="box-image">
-              <p class="box-title">Infrastructure</p>
-              <p class="box-desc">power distribution and building automation</p>
-            </a>
-          </div>
-
-          <div class="box">
-            <a href="pcb-designer.html">
-              <img src="pcb-design.jpg" alt="PCB Design" class="box-image">
-              <p class="box-title">Electrical</p>
-              <p class="box-desc">pcb design, chip, and IoT</p>
-            </a>
-          </div>
-
-          <div class="box">
-            <a href="software-engineering.html">
-              <img src="software-engineering.jpg" alt="Software Engineering" class="box-image">
-              <p class="box-title">Software </p>
-              <p class="box-desc">Embedded, control, devops, simulations, and full stack</p>
-            </a>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-        <!-- ------------------------------- -->
-
-
-
-
-
-        <div class="intro-text">Roles</div>
-        <div class="boxes">
-          <div class="grid">
-            <div class="box">
-              <a href="embedded-aerospace.html">
-                <img src="embedded-aerospace.jpg" alt="Embedded Engineer in Aerospace & Defense" class="box-image">
-                <p class="box-title">Embedded Engineer</p>
-                <p class="box-desc">Aerospace & Defense — Raytheon, Lockheed Martin, SpaceX<br>$160k–$200k+</p>
-              </a>
-            </div>
-
-            <div class="box">
-              <a href="systems-aerospace.html">
-                <img src="systems-aerospace.jpg" alt="Systems Engineer in Aerospace & Satellite Communications"
-                  class="box-image">
-                <p class="box-title">Systems Engineer</p>
-                <p class="box-desc">Aerospace & Satellite — NASA, Boeing, defense contractors<br>$180k–$250k+</p>
-              </a>
-            </div>
-
-            <div class="box">
-              <a href="controls-industrial.html">
-                <img src="controls-industrial.jpg" alt="Controls Engineer in Oil, Gas and Heavy Industrial Automation"
-                  class="box-image">
-                <p class="box-title">Controls Engineer</p>
-                <p class="box-desc">Oil, Gas & Heavy Industry<br>$140k–$180k</p>
-              </a>
-            </div>
-
-            <div class="box">
-              <a href="embedded-medical-autonomous.html">
-                <img src="embedded-medical-autonomous.jpg"
-                  alt="Embedded Systems Engineer in Medical Devices and Autonomous Vehicles" class="box-image">
-                <p class="box-title">Embedded Systems Engineer</p>
-                <p class="box-desc">Medical Devices & Autonomous Vehicles — Medtronic, Tesla, Apple<br>$170k–$220k+</p>
-              </a>
-            </div>
-
-            <div class="box">
-              <a href="systems-controls-robotics.html">
-                <img src="systems-controls-robotics.jpg"
-                  alt="Systems Controls Engineer in Aerospace & Military Robotics" class="box-image">
-                <p class="box-title">Systems Controls Engineer</p>
-                <p class="box-desc">Aerospace & Military Robotics<br>Salary varies</p>
-              </a>
-            </div>
-
-            <div class="box">
-              <a href="embedded-controls-ev.html">
-                <img src="embedded-controls-ev.jpg"
-                  alt="Embedded Controls Engineer in Electric Vehicles and Advanced Robotics" class="box-image">
-                <p class="box-title">Embedded Controls Engineer</p>
-                <p class="box-desc">EVs & Robotics — Tesla, Boston Dynamics<br>$170k–$210k+</p>
-              </a>
-            </div>
-
-            <div class="box">
-              <a href="embedded-systems-controls.html">
-                <img src="embedded-systems-controls.jpg"
-                  alt="Embedded Systems Controls Engineer in Defense Technology & Advanced Medical Robotics"
-                  class="box-image">
-                <p class="box-title">Embedded Systems Controls Engineer</p>
-                <p class="box-desc">Defense & Medical Robotics — Tesla, Boston Dynamics, Apple, Shield
-                  AI<br>$200k–$260k+</p>
-              </a>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-        <div class="intro-text">Regulatory compliance</div>
-
-        <div class="boxes">
-          <div class="grid">
-            <div class="box">
-              <div class="sector">Aerospace</div>
-              <div class="standards">FAA<br>MIL-STD</div>
-            </div>
-
-            <div class="box">
-              <div class="sector">Medical</div>
-              <div class="standards">FDA<br>ISO 13485</div>
-            </div>
-
-            <div class="box">
-              <div class="sector">Infrastructure</div>
-              <div class="standards">NEC<br>IEEE Standards</div>
-            </div>
-
-            <div class="box">
-              <div class="sector">Electronics</div>
-              <div class="standards">CE<br>UL</div>
-            </div>
-
-            <div class="box">
-              <div class="sector">Software</div>
-              <div class="standards">Cybersecurity<br>Safety-Critical Protocols</div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <!-- ------------------------------------------------------------ -->
-
-
-
-
-
-
-        <div class="intro-text">Explore My Projects</div>
-
-        <div class="boxes">
-          <div class="grid">
-            <div class="button-box">
-              <img src="https://via.placeholder.com/150" alt="Robotics">
-              <a href="https://example.com/robotics">Robotics</a>
-            </div>
-
-            <div class="button-box">
-              <img src="https://via.placeholder.com/150" alt="Smart Infrastructure">
-              <a href="https://example.com/infrastructure">Smart Infrastructure</a>
-            </div>
-
-            <div class="button-box">
-              <img src="https://via.placeholder.com/150" alt="PCB Design">
-              <a href="https://example.com/pcb">PCB Design</a>
-            </div>
-
-            <div class="button-box">
-              <img src="https://via.placeholder.com/150" alt="Control Systems">
-              <a href="https://example.com/control">Control Systems</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="intro-text">Call-to-Action Buttons:</div>
-
-
-        <div class="boxes">
-          <div class="box">Explore My Work</div>
-          <div class="box">Industry Value</div>
-          <div class="box">Get In Touch</div>
-        </div>
-
-
-        <div class="intro-text">Keven Gonzalez “Who is Keven?”
-          An electrical engineer who designs systems that bridge infrastructure, robotics, and innovation. His work
-          spans
-          smart buildings, autonomous drones, robotic surgical tools, and even concert audio setups. Whether it's
-          hardware
-          or human experience, he focuses on connecting the power.
-        </div>
-
-        <div class="boxes">
-
-          <div class="box">PCB Design & Embedded Systems</div>
-          <div class="box">Robotics & Autonomous Platforms</div>
-          <div class="box">Smart Home & Infrastructure Wiring</div>
-          <div class="box">Missile & Aerospace Schematics</div>
-          <div class="box">Surgical Robotics Design</div>
-          <div class="box">Automotive Electrical & Control</div>
-          <div class="box">Live Audio Engineering (Concert Systems)</div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="container">
-      <div class="footer">Footerkkkkkkkkkkkkkkkkkkkkk
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <script>
-    particlesJS.load('particles-js', 'particles-config.json');
-  </script>
-
-
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+  </footer>
 
 </body>
-
 </html>
