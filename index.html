@@ -3,67 +3,290 @@
 <html lang="en">
 
 <head>
-    <!-- Metadata -->
+    <!-- ================= METADATA ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Page Information -->
-    <title>My Website</title>
     <meta name="description" content="Website description">
+    <title>My Website</title>
 
-    <!-- External Resources -->
-    <link rel="stylesheet" href="style.css">
+    <!-- ================= CSS STYLES ================= -->
+    <style>
+        /* GLOBAL SETTINGS */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            margin: 0;
+            min-width: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f4f4f4;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #155eef;
+        }
+
+        /* HEADER */
+        header {
+            padding: clamp(2rem, 6vw, 5rem) 1rem;
+            text-align: center;
+            color: white;
+            background: #172554;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            line-height: 1.2;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            padding: 0.5rem 0.75rem;
+            color: #222;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            background: #e5e7eb;
+        }
+
+        /* PAGE LAYOUT */
+        .page-layout {
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: clamp(1rem, 3vw, 2rem);
+            align-items: start;
+        }
+
+        /* SIDEBAR */
+        aside {
+            min-width: 0;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            min-width: 0;
+        }
+
+        /* CONTENT SECTIONS */
+        section {
+            min-width: 0;
+            margin-bottom: 2rem;
+            padding: clamp(1rem, 3vw, 2rem);
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: clamp(1.3rem, 2.5vw, 2rem);
+        }
+
+        /* RESPONSIVE CARD GRID */
+        .card-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+            gap: 1rem;
+        }
+
+        /* INDIVIDUAL CARDS */
+        .card {
+            min-width: 0;
+            padding: 1rem;
+            overflow-wrap: anywhere;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .card h3 {
+            font-size: clamp(1.05rem, 2vw, 1.3rem);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 1.5rem 1rem;
+            text-align: center;
+            color: white;
+            background: #172554;
+            overflow-wrap: anywhere;
+        }
+
+        /* TABLETS AND NARROW WINDOWS */
+        @media (max-width: 850px) {
+            .page-layout {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        /* MOBILE PHONES */
+        @media (max-width: 600px) {
+            nav {
+                gap: 0.25rem;
+                padding: 0.5rem;
+            }
+
+            nav a {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .page-layout {
+                padding: 0.75rem;
+                gap: 1rem;
+            }
+
+            section {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .card-grid {
+                grid-template-columns: minmax(0, 1fr);
+            }
+        }
+
+        /* ACCESSIBILITY: REDUCED MOTION */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <!-- Logo, title, introduction -->
+    <!-- ================= HEADER ================= -->
+    <header id="home">
+        <h1>My Website</h1>
+        <p>Website introduction or tagline</p>
     </header>
 
-    <!-- NAVIGATION -->
-    <nav>
-        <!-- Navigation links -->
+    <!-- ================= NAVIGATION ================= -->
+    <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- MAIN PAGE LAYOUT -->
+    <!-- ================= PAGE LAYOUT ================= -->
     <div class="page-layout">
 
         <!-- SIDEBAR -->
         <aside>
-            <!-- Secondary navigation or information -->
+            <h2>Sidebar</h2>
+            <p>Additional information or links.</p>
         </aside>
 
         <!-- MAIN CONTENT -->
         <main>
 
             <!-- SECTION 1 -->
-            <section id="section-1">
-                <h2>Section 1</h2>
+            <section id="about">
+                <h2>About</h2>
+                <p>Introduce yourself or your website here.</p>
             </section>
 
             <!-- SECTION 2 -->
-            <section id="section-2">
-                <h2>Section 2</h2>
+            <section id="services">
+                <h2>Services</h2>
+
+                <div class="card-grid">
+
+                    <article class="card">
+                        <img src="images/image1.jpg" alt="First service">
+                        <h3>Service One</h3>
+                        <p>Description of the first service.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/image2.jpg" alt="Second service">
+                        <h3>Service Two</h3>
+                        <p>Description of the second service.</p>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/image3.jpg" alt="Third service">
+                        <h3>Service Three</h3>
+                        <p>Description of the third service.</p>
+                    </article>
+
+                </div>
             </section>
 
             <!-- SECTION 3 -->
-            <section id="section-3">
-                <h2>Section 3</h2>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Showcase your projects here.</p>
+            </section>
+
+            <!-- SECTION 4 -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Contact information goes here.</p>
+                <a href="mailto:you@example.com">Email me</a>
             </section>
 
         </main>
 
     </div>
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <!-- Copyright, contact, additional links -->
+        <p>&copy; 2026 My Website. All rights reserved.</p>
     </footer>
-
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
 
 </body>
 </html>
